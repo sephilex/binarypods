@@ -7,7 +7,24 @@ PODS:
   - DeviceKit (4.5.0)
   - DZNEmptyDataSet (1.8.1)
   - Eureka (5.3.4)
+  - HXPHPicker (1.2.3):
+    - HXPHPicker/Full (= 1.2.3)
+  - HXPHPicker/Camera (1.2.3):
+    - HXPHPicker/Core
+  - HXPHPicker/Core (1.2.3)
+  - HXPHPicker/Editor (1.2.3):
+    - HXPHPicker/Core
+  - HXPHPicker/Full (1.2.3):
+    - HXPHPicker/Lite
+    - Kingfisher (~> 7.0)
+  - HXPHPicker/Lite (1.2.3):
+    - HXPHPicker/Camera
+    - HXPHPicker/Editor
+    - HXPHPicker/Picker
+  - HXPHPicker/Picker (1.2.3):
+    - HXPHPicker/Core
   - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (7.0.0)
   - Localize-Swift (3.2.0):
     - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
     - Localize-Swift/UIKit (= 3.2.0)
@@ -59,26 +76,53 @@ PODS:
   - SnapKit (5.0.1)
   - SplitRow (2.2.0):
     - Eureka (~> 5.3.3)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
   - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
-  - CocoaLumberjack/Swift (~> 3.0)
-  - CryptoSwift (~> 1.3.8)
-  - DeviceKit (~> 4.0)
-  - DZNEmptyDataSet (~> 1.0)
-  - Eureka (~> 5.0)
-  - IQKeyboardManagerSwift (~> 6.0)
-  - Localize-Swift (~> 3.0)
+  - CocoaLumberjack/Swift
+  - CryptoSwift
+  - DeviceKit
+  - DZNEmptyDataSet
+  - Eureka
+  - HXPHPicker
+  - IQKeyboardManagerSwift
+  - Localize-Swift
   - Moya-ObjectMapper/RxSwift (from `https://github.com/sephilex/Moya-ObjectMapper.git`, branch `master`)
   - Moya/RxSwift
-  - PKHUD (~> 5.0)
-  - R.swift (~> 5.0)
+  - PKHUD
+  - R.swift
   - ReactorKit
   - RxOptional
   - RxSwiftExt
-  - RxTheme (~> 6.0)
-  - SnapKit (~> 5.0)
+  - RxTheme
+  - SnapKit
   - SplitRow
+  - SwifterSwift
 
 SPEC REPOS:
   trunk:
@@ -88,7 +132,9 @@ SPEC REPOS:
     - DeviceKit
     - DZNEmptyDataSet
     - Eureka
+    - HXPHPicker
     - IQKeyboardManagerSwift
+    - Kingfisher
     - Localize-Swift
     - Moya
     - ObjectMapper
@@ -104,6 +150,7 @@ SPEC REPOS:
     - RxTheme
     - SnapKit
     - SplitRow
+    - SwifterSwift
     - WeakMapTable
 
 EXTERNAL SOURCES:
@@ -123,7 +170,9 @@ SPEC CHECKSUMS:
   DeviceKit: b68cded46afdaefc5d2253d631d441ba7049a7fe
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Eureka: 60cf058f86a8fb3ed26165ba5292b9850361b0a6
+  HXPHPicker: 5e53192207648efb6883118d41874b2395ed9954
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Moya-ObjectMapper: 57049e0a1620edc378c41454ea92e59386f13c52
@@ -140,8 +189,9 @@ SPEC CHECKSUMS:
   RxTheme: be60cb14e0544b3cbd574cc37fed35ba9d61aa1f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SplitRow: 1911d2bd0f34e6ac93d83cc741730505a91c4d04
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 24fab379a99d7a5394e309be7c4ed32cb3c40267
+PODFILE CHECKSUM: 2f0edc1f721ebf6a2a464978c1a174b208f0d725
 
 COCOAPODS: 1.11.2
