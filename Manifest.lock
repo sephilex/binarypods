@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.4)
+  - Cache (6.0.0)
   - CocoaLumberjack/Core (3.7.2)
   - CocoaLumberjack/Swift (3.7.2):
     - CocoaLumberjack/Core
@@ -46,6 +47,8 @@ PODS:
   - Moya/RxSwift (15.0.0):
     - Moya/Core
     - RxSwift (~> 6.0)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
   - ObjectMapper (4.2.0)
   - PKHUD (5.3.0)
   - PopupDialog (1.1.1):
@@ -420,6 +423,7 @@ PODS:
   - WeakMapTable (1.2.0)
 
 DEPENDENCIES:
+  - Cache
   - CocoaLumberjack/Swift
   - CryptoSwift
   - DeviceKit
@@ -430,6 +434,7 @@ DEPENDENCIES:
   - Localize-Swift
   - Moya-ObjectMapper/RxSwift (from `https://github.com/sephilex/Moya-ObjectMapper.git`, branch `master`)
   - Moya/RxSwift
+  - "NSObject+Rx"
   - PKHUD
   - PopupDialog
   - QMUIKit
@@ -447,6 +452,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Cache
     - CocoaLumberjack
     - CryptoSwift
     - DeviceKit
@@ -458,6 +464,7 @@ SPEC REPOS:
     - Kingfisher
     - Localize-Swift
     - Moya
+    - "NSObject+Rx"
     - ObjectMapper
     - PKHUD
     - PopupDialog
@@ -490,6 +497,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
   CryptoSwift: 01b0f0cba1d5c212e5a335ff6c054fb75a204f00
   DeviceKit: b68cded46afdaefc5d2253d631d441ba7049a7fe
@@ -502,6 +510,7 @@ SPEC CHECKSUMS:
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   Moya-ObjectMapper: 57049e0a1620edc378c41454ea92e59386f13c52
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
@@ -522,6 +531,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
 
-PODFILE CHECKSUM: 6d82560f141c62a5e19550311bc267f5d8d8c1b1
+PODFILE CHECKSUM: 4415ad1b0a1dca3f5f8fa4ab98de39c258634026
 
 COCOAPODS: 1.11.2
